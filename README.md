@@ -1,5 +1,5 @@
 # facu | atividades e provas
 
--Java
--Python
--HTML/CSS
+- Java
+- Python
+- HTML/CSS
