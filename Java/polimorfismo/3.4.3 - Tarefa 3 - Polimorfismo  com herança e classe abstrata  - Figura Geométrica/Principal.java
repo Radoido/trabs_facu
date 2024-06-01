@@ -10,6 +10,7 @@ public class Principal {
         //Testa uma figura do tipo círculo
         FiguraGeometrica figuraCirculo = new Circulo("amarelo", 2);
         System.out.println("A area do circulo e = " + figuraCirculo.getArea());
+        System.out.println("a cor do triangulo é " +figuraTriangulo.getCor());
 
         //Cria um desenho com figuras geométricas do tipo triângulo e círculo
         FiguraGeometrica desenho[] = new FiguraGeometrica[4];

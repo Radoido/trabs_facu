@@ -1,5 +1,6 @@
-public class ContaCorrente extends Conta{
+public class ContaCorrente implements ISaldo{
 
+    private double saldo;
     private double taxaServico;
 
     public ContaCorrente(){
@@ -7,7 +8,7 @@ public class ContaCorrente extends Conta{
     }
 
     public ContaCorrente(double saldo, double taxaServico){
-        super(saldo);
+        this.saldo = saldo;
         this.taxaServico = taxaServico;
     }
 
@@ -19,14 +20,20 @@ public class ContaCorrente extends Conta{
         this.taxaServico = taxaServico;
     }
 
-    @Override
-    public double getSaldo(){
-        return super.getSaldo() - (super.getSaldo()*(getTaxaServico()/100));
+    public double getSaldo() {
+        return saldo + (saldo*(taxaServico/100));
     }
 
-    public void setDeposito(double deposito){
-        super.setSaldo(super.getSaldo()+deposito);
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
+
+
+    public void setDeposito(double deposito){
+        this.saldo = (saldo+deposito);
+    }
+
+
     
 
 }

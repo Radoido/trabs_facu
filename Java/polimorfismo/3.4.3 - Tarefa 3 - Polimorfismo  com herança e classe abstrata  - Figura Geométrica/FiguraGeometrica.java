@@ -1,22 +1,19 @@
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
 
     private String nome;
     private String cor;
 
     public FiguraGeometrica(){
-        this.nome = "";
         this.cor = "";
 
     }
 
-    public FiguraGeometrica(String nome){
-        this.nome = nome;
+    public FiguraGeometrica(String cor){
+        this.cor = cor;
     }
 
 
-    public double getArea(){
-        return (0);
-    }
+    public abstract double getArea();
 
     public String getCor() {
         return cor;

@@ -1,14 +1,15 @@
-public class ContaPoupanca extends Conta{
+public class ContaPoupanca implements ISaldo{
 
+    private double saldo;
     private double juros;
 
 
     public ContaPoupanca(){
-        this(0,0.0);
+        this(0.0,0.0);
     }
 
     public ContaPoupanca(double saldo, double juros){
-        super(saldo);
+        this.saldo = saldo;
         this.juros = juros;
     }
 
@@ -20,13 +21,18 @@ public class ContaPoupanca extends Conta{
         this.juros = juros;
     }
 
-    @Override
     public double getSaldo(){
-        return super.getSaldo()+((juros/100)*super.getSaldo());
+        return saldo + (saldo*(juros/100));
     }
 
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+
     public void setDeposito(double deposito){
-        super.setSaldo(super.getSaldo() + deposito);
+        this.saldo = (saldo + deposito);
     
     }
+
 }
