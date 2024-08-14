@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="168dp">
+
+    <EditText
+        android:id="@+id/editTextPeso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNota1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNota1" />
+
+    <EditText
+        android:id="@+id/editTextNota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Primeira nota"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcula"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <Button
+        android:id="@+id/buttonCalcula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="137dp"
+        android:text="Calcular média"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso3" />
+
+    <EditText
+        android:id="@+id/editTextNota3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Terceira nota"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextPeso2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso2" />
+
+    <EditText
+        android:id="@+id/editTextPeso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNota2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNota2" />
+
+    <EditText
+        android:id="@+id/editTextNota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Segunda nota"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextPeso1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso1" />
+
+    <EditText
+        android:id="@+id/editTextPeso3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNota3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNota3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
